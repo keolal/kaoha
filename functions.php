@@ -37,7 +37,7 @@ add_image_size( 'sidebar', 280, 150, TRUE );
 
 //* Add support for custom header
 add_theme_support( 'custom-header', array(
-	'width'           => 300,
+	'width'           => 450,
 	'height'          => 100,
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
