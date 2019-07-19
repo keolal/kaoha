@@ -134,3 +134,13 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Home - Bottom', 'education' ),
 	'description' => __( 'This is the bottom section of the Home page.', 'education' ),
 ) );
+
+
+//* Kaoha Specific
+
+add_filter( 'simple_social_disable_custom_css', '__return_true' );
+
+// Remove site footer.
+remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
