@@ -2,5 +2,4 @@
 /**
  * Template Name: Blog
  */
-
 genesis();

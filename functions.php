@@ -144,3 +144,21 @@ add_filter( 'simple_social_disable_custom_css', '__return_true' );
 remove_action( 'genesis_footer', 'genesis_footer_markup_open', 5 );
 remove_action( 'genesis_footer', 'genesis_do_footer' );
 remove_action( 'genesis_footer', 'genesis_footer_markup_close', 15 );
+
+// Set amount of posts to display on Home Page
+function frontpage_limit( $query ) {
+    if ( $query->is_home() ) {
+		$query->set( 'posts_per_page', 4 );
+	}
+}
+
+add_action( 'pre_get_posts', 'frontpage_limit' );
+
+
+
+function blog_limit( $query2 ) {
+	if( $query2->is_page( 79 ) ) {
+		$query2->set( 'posts_per_page', 12 );
+	}
+}
+add_action( 'pre_get_posts', 'blog_limit' );

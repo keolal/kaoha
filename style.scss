@@ -1445,8 +1445,6 @@ Content Area
 	box-shadow: 0px 5px 5px rgba(70, 70, 70, 0.3);
 }
 
-.home-featured .widget:last-of-type {
-}
 
 .education-pro-home .home-featured .widget.genesis_responsive_slider {
 	background-color: #fff;
@@ -1572,6 +1570,12 @@ Content Area
 	padding: 40px;
 }
 
+.post{
+	display: inline-block;
+    width: 45%;
+    margin: 2.5%
+
+}
 .entry-header {
 	margin-bottom: 10px;
 }

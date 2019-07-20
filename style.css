@@ -1677,6 +1677,12 @@ Content Area
   padding: 40px;
 }
 
+.post {
+  display: inline-block;
+  width: 45%;
+  margin: 2.5%;
+}
+
 .entry-header {
   margin-bottom: 10px;
 }
