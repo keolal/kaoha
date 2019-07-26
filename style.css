@@ -308,7 +308,7 @@ Defaults
 body {
   background: #f5f5f5 url("images/kapa-seamless.png");
   color: #444;
-  font-family: open-sans, sans-serif;
+  font-family: pt-sans, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -408,12 +408,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: trajan-pro-3, serif;
+  font-family: pt-sans-caption, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 10px;
-  text-transform: uppercase;
   color: #0C4F4D;
 }
 
@@ -596,7 +595,6 @@ input[type="submit"],
   font-size: 16px;
   font-weight: 300;
   padding: 14px 30px;
-  text-transform: uppercase;
   white-space: normal;
   width: auto;
 }
@@ -951,8 +949,9 @@ Common Classes
 }
 
 .widget-title {
-  font-size: 20px;
+  font-size: 30px;
   margin-bottom: 20px;
+  padding-left: 25px;
 }
 
 .after-entry .widget-title,
@@ -963,13 +962,11 @@ Common Classes
   letter-spacing: 2px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  text-transform: uppercase;
 }
 
 .footer-widgets .widget-title {
   color: #fff;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 /* WordPress
@@ -1084,7 +1081,7 @@ Widgets
 }
 
 .footer-widget-area h4 {
-  font-family: open-sans, sans-serif;
+  font-family: pt-sans-caption, sans-serif;
   font-Size: 16px;
   color: white;
 }
@@ -1235,7 +1232,7 @@ Site Header
   border-top: 3px solid #97161a;
   -webkit-box-shadow: 0 3px rgba(70, 70, 70, 0.05);
           box-shadow: 0 3px rgba(70, 70, 70, 0.05);
-  min-height: 120px;
+  min-height: 73px;
 }
 
 .education-pro-home .site-header {
@@ -1252,8 +1249,8 @@ Site Header
   margin: 0 auto;
   position: absolute;
   text-align: center;
-  width: 450px;
-  margin-top: 8px;
+  width: 488px;
+  margin-top: 10px;
 }
 
 .header-image .title-area {
@@ -1264,7 +1261,6 @@ Site Header
   font-size: 34px;
   font-weight: 700;
   line-height: 1.2;
-  text-transform: uppercase;
 }
 
 .site-header .site-title a,
@@ -1274,7 +1270,7 @@ Site Header
 
 .header-image .site-title > a {
   float: left;
-  min-height: 100px;
+  min-height: 50px;
   width: 100%;
 }
 
@@ -1302,9 +1298,8 @@ Site Header
   float: right;
   text-align: right;
   width: 740px;
-  min-height: 120px;
   position: relative;
-  top: 64px;
+  top: 14px;
 }
 
 /*
@@ -1380,18 +1375,20 @@ Site Navigation
 
 #menu-primary-navigation > li.menu-item-has-children > a::after {
   padding-left: 10px;
+  padding-top: 4px;
   float: right;
   position: relative;
   content: "\25BC";
-  font-size: 12px;
+  font-size: 10px;
   color: #e2e2e2;
 }
 
 .sub-menu > li.menu-item-has-children > a::after {
   float: right;
+  padding-top: 3px;
   position: relative;
   content: "\25BA";
-  font-size: 12px;
+  font-size: 10px;
   color: #e2e2e2;
 }
 
@@ -1472,7 +1469,6 @@ Site Navigation
 .site-header .genesis-nav-menu a {
   color: #e2e2e2;
   padding: 20px 16px;
-  text-transform: uppercase;
 }
 
 .site-header .genesis-nav-menu .sub-menu a {
@@ -1562,7 +1558,7 @@ Content Area
 
 .home-featured .slide-excerpt .more-link {
   background-color: #f5f5f5;
-  color: #e44a3c;
+  color: #131981;
   display: block;
   padding: 20px 40px;
   margin: 40px -40px -12px;
@@ -1611,7 +1607,6 @@ Content Area
 .home-top .widget_text .widget-title {
   color: #e44a3c;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .home-middle {
@@ -1644,7 +1639,7 @@ Content Area
 }
 
 .home-bottom {
-  background-color: #78a7c8;
+  background-color: #fafafa;
   -webkit-box-shadow: inset 0 5px rgba(0, 0, 0, 0.05);
           box-shadow: inset 0 5px rgba(0, 0, 0, 0.05);
   color: #fff;
@@ -1655,7 +1650,7 @@ Content Area
 .home-bottom .widget a,
 .home-middle .widget .entry-title a:hover,
 .home-middle .widget a:hover {
-  color: #fff;
+  color: #131981;
 }
 
 .home-bottom a:hover {
@@ -1664,6 +1659,82 @@ Content Area
 
 /* Entries
 --------------------------------------------- */
+.featuredpost .post {
+  position: relative;
+  background-color: #fff;
+  color: #444;
+  -webkit-box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+          box-shadow: 3px 3px rgba(70, 70, 70, 0.05);
+  margin: 2.5%;
+  width: 45%;
+  padding: 0px !important;
+  line-height: 0px;
+}
+
+.featuredpost .post:hover .entry-header {
+  opacity: 1;
+}
+
+.featuredpost .post h2 {
+  color: #0C4F4D !important;
+}
+
+.featuredpost .post a {
+  color: #131981;
+  margin-bottom: 0px !important;
+}
+
+.featuredpost .post a:hover {
+  color: #4951e4;
+}
+
+.featuredpost .post a:active {
+  color: black;
+}
+
+.featuredpost .post .entry-header {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: rgba(107, 16, 18, 0.6);
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.featuredpost .post .entry-title a {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #e2e2e2;
+  width: 100%;
+  height: 100%;
+  padding: 0px !important;
+  font-family: pt-sans-caption, sans-serif;
+  color: #e2e2e2;
+}
+
+.featuredpost .post .entry-title a:hover {
+  color: white;
+}
+
+featuredpost .post .entry-title a:active {
+  color: #969696;
+}
+
 .page {
   padding-bottom: 20px;
 }
@@ -1679,8 +1750,7 @@ Content Area
 
 .post {
   display: inline-block;
-  width: 45%;
-  margin: 2.5%;
+  width: 100%;
 }
 
 .entry-header {
@@ -1713,7 +1783,9 @@ Content Area
 /* Entry Meta
 --------------------------------------------- */
 p.entry-meta {
-  font-size: 14px;
+  font-family: pt-sans-caption, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
 }
 
 .content p.entry-meta {
@@ -1810,7 +1882,6 @@ p.entry-meta {
   color: #e44a3c;
   font-size: 18px;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .comment-meta {
@@ -1937,14 +2008,15 @@ Footer Widgets
   width: 100%;
   padding: 30px 0px 100px 0px;
   color: #fff;
-  font-family: trajan-pro-3, serif;
+  font-family: pt-sans-caption, sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
-  text-transform: uppercase;
   text-align: center;
 }
 
 .footer-widgets-5 a {
+  font-size: 10px;
   color: #e2e2e2;
 }
 
