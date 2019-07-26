@@ -2059,8 +2059,8 @@ Site Footer
   margin-bottom: 0;
 }
 
-.simple-social-icons ul.aligncenter {
-  text-align: right !important;
+.simple-social-icons{
+  float: right;
 }
 
 .simple-social-icons ul li a {
