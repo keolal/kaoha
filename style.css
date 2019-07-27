@@ -311,7 +311,7 @@ body {
   font-family: pt-sans, sans-serif;
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.625;
 }
 
@@ -343,11 +343,11 @@ a {
 }
 
 a:hover {
-  color: #4951e4;
+  color: #202ada;
 }
 
 a:active {
-  color: black;
+  color: #060828;
 }
 
 p {
@@ -1078,6 +1078,7 @@ Widgets
 
 .footer-widget-area {
   text-align: left;
+  line-height: 1.3em !important;
 }
 
 .footer-widget-area h4 {
@@ -1087,7 +1088,8 @@ Widgets
 }
 
 .footer-widget-area a {
-  color: #e2e2e2;
+  color: #fffad7;
+  font-size: 14px;
 }
 
 .footer-widget-area a:hover {
@@ -1095,7 +1097,7 @@ Widgets
 }
 
 .footer-widget-area a:active {
-  color: #969696;
+  color: #ffed71;
 }
 
 /* Featured Content
@@ -1685,11 +1687,11 @@ Content Area
 }
 
 .featuredpost .post a:hover {
-  color: #4951e4;
+  color: #202ada;
 }
 
 .featuredpost .post a:active {
-  color: black;
+  color: #060828;
 }
 
 .featuredpost .post .entry-header {
@@ -1732,11 +1734,7 @@ Content Area
 }
 
 featuredpost .post .entry-title a:active {
-  color: #969696;
-}
-
-.page {
-  padding-bottom: 20px;
+  color: #afafaf;
 }
 
 .post,
@@ -1852,7 +1850,7 @@ p.entry-meta {
 
 .archive-pagination li a:hover,
 .archive-pagination .active a {
-  color: #4951e4 !important;
+  color: #202ada !important;
 }
 
 /* Comments
@@ -2006,22 +2004,31 @@ Footer Widgets
 
 .footer-widgets-5 {
   width: 100%;
-  padding: 30px 0px 100px 0px;
+  padding: 0px 0px 100px 0px;
   color: #fff;
-  font-family: pt-sans-caption, sans-serif;
+  font-family: pt-sans, sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.2;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.8em !important;
+  text-align: left;
+}
+
+.footer-widgets-5 h4,
+.footer-widgets-5 h4 > a {
+  font-size: 18px !important;
+  font-family: pt-sans-caption, sans-serif;
 }
 
 .footer-widgets-5 a {
-  font-size: 10px;
-  color: #e2e2e2;
+  color: #fffad7;
 }
 
 .footer-widgets-5 a:hover {
   color: white;
+}
+
+.footer-widgets-5 a:active {
+  color: #ffed71;
 }
 
 .footer-widgets-1,
