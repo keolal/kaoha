@@ -1485,8 +1485,19 @@ Site Navigation
 /* Primary Navigation
 --------------------------------------------- */
 .nav-primary {
-  background-color: #34678a;
-  color: #fff;
+  background-color: #6b1012;
+  color: #e2e2e2;
+  text-align: right;
+  padding: 0px;
+  font-size: 12px;
+}
+
+.nav-primary .genesis-nav-menu a {
+  padding: 10px 20px;
+}
+
+.nav-primary .genesis-nav-menu a:hover {
+  background: #811316;
 }
 
 .nav-primary .genesis-nav-menu {
@@ -2225,11 +2236,6 @@ Events Calendar
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1160px) {
-  .site-inner,
-  .wrap {
-    max-width: 100%;
-    padding: 20px;
-  }
   .content-sidebar-sidebar .content-sidebar-wrap,
   .sidebar-content-sidebar .content-sidebar-wrap,
   .sidebar-sidebar-content .content-sidebar-wrap {
@@ -2262,6 +2268,15 @@ Media Queries
   .featuredpost .post .entry-header {
     opacity: 1;
   }
+  .nav-primary .genesis-nav-menu a {
+    padding: 10px 20px;
+  }
+  .title-area {
+    margin-left: 20px;
+  }
+  .footer-widgets {
+    padding: 50px;
+  }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -2280,15 +2295,22 @@ Media Queries
   .site-header .widget-area {
     width: 100%;
   }
+  .site-header {
+    padding-bottom: 15px;
+  }
   .title-area {
     position: relative;
     margin-bottom: 6px;
+    margin-left: 20px;
     float: left;
   }
   .genesis-nav-menu li,
   .site-header ul.genesis-nav-menu,
   .site-header .search-form {
     float: none;
+  }
+  .nav-primary .genesis-nav-menu {
+    text-align: right;
   }
   .footer-widgets,
   .genesis-nav-menu,
@@ -2539,18 +2561,18 @@ Media Queries
     width: 50%;
     float: left;
   }
-  .site-footer {
-    padding: 20px 20px 40px;
+  .footer-widgets {
+    padding: 30px;
   }
   .featuredpost .post {
     width: 100%;
   }
+  .footer-widgets-5 {
+    margin-top: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-  .wrap {
-    padding: 0px;
-  }
   .featuredpost .post {
     width: 95%;
   }
@@ -2592,9 +2614,6 @@ Media Queries
   .footer-widgets-5 {
     width: 100%;
     padding-bottom: 25px;
-  }
-  .site-header {
-    padding: 10px 10px 20px 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
