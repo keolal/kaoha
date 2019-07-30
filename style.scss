@@ -81,6 +81,11 @@ $footer-link-color: #fffad7;
 $call-to-action-color: #814813;
 $body-font: pt-sans, sans-serif;
 $heading-font: pt-sans-caption, sans-serif;
+$lighten-1: 5%;
+$lighten-2: $lighten-1 * 2;
+$lighten-3: $lighten-1 * 3;
+$lighten-4: $lighten-1 * 4;
+$lighten-5: $lighten-1 * 5;
 
 $colors: (
     primary: $primary-color,
@@ -100,7 +105,12 @@ $colors: (
     footer-link-light: lighten($footer-link-color, $color-step-links),
     call-to-action: $call-to-action-color,
     call-to-action-dark: darken($call-to-action-color, $color-step),
-    call-to-action-light: lighten($call-to-action-color, $color-step),
+	call-to-action-light: lighten($call-to-action-color, $color-step),
+	primary-light-1: lighten($primary-color, $lighten-1),
+	primary-light-2: lighten($primary-color, $lighten-2),
+	primary-light-3: lighten($primary-color, $lighten-3),
+	primary-light-4: lighten($primary-color, $lighten-4),
+	primary-light-5: lighten($primary-color, $lighten-5),
 );
 
 @function color($color-name) {
@@ -1973,7 +1983,7 @@ Site Footer
 .simple-social-icons ul li a{
 	background-color: #e9e9e9 !important;
 	display:block;
-	padding:15px;
+	padding: 16px;
 	box-shadow: 3px 3px rgba(70, 70, 70, 0.15);
 }
 
@@ -1982,12 +1992,148 @@ Site Footer
 }
 
 .simple-social-icons svg{
+	position: relative;
+	top:-3px;
+	left:-3px;
 	fill: (color(primary)) !important;
+	font-size: 20px;
 }
 .simple-social-icons svg:hover{
 	fill: (color(primary-light)) !important;
 }
 
+
+
+/* Custom Styles
+--------------------------------------------------------------------------------------------------- */
+
+.process{
+	float: left;
+	margin:0 auto !important;
+    margin-bottom: 50px;
+	width:100%;
+}
+
+.process li{
+    position: relative;
+    float: left;
+    height: 100px;
+    width: 20%;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1.2px;
+    line-height:100px;
+    clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%, 100% 50%);
+}
+
+.process li.step1{
+    background:(color(primary));
+    z-index: 5;
+}
+
+.process li.step2{
+    right:2.5%;
+    background:(color(primary-light-1));
+    z-index: 4;
+}
+
+.process li.step3{
+    right:5%;
+    background:(color(primary-light-2));
+    z-index: 3;
+}
+
+.process li.step4{
+    right:7.5%;
+    background:(color(primary-light-3));
+    z-index: 2;
+}
+
+.process li.step5{
+    right:10%;
+    background:(color(primary-light-4));
+    z-index: 1;
+}
+
+
+/*
+Events Calendar
+--------------------------------------------------------------------------------------------------- */
+
+#tribe-events-content table.tribe-events-calendar {
+	background: #fafafa;
+}
+
+.tribe-bar-disabled{
+	display: none;
+}
+
+.tribe-events-calendar thead th{
+	background: #fafafa;
+	color: #222 !important;
+	border: 1px solid #d2d2d2 !important;
+	border-bottom: none !important;
+	padding: .5em 0 !important;
+}
+
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a{
+	background: #fafafa;
+	color: #222;
+	text-align: center;
+	margin-top: 5px;
+}
+
+
+#tribe_events_filters_wrapper input[type=submit],
+.tribe-events-button, .tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive, .tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a{
+	background: (color(primary-light-3));
+	color: #fafafa;
+	padding:5px !important;
+	border-radius: 20px;
+	width: 15%;
+	margin: 5px auto;
+}
+
+.tribe-events-calendar div[id*=tribe-events-daynum-],
+.tribe-events-calendar div[id*=tribe-events-daynum-] a{
+	background: #fafafa;
+	color: #666;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.tribe-events-calendar td.tribe-events-othermonth.tribe-events-future div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-othermonth.tribe-events-future div[id*=tribe-events-daynum-]>a{
+	background-color: #fafafa;
+
+}
+
+.tribe-events-month-event-title a{
+	color: (color(accent)) !important;
+}
+
+.tribe-events-month-event-title a:hover{
+	color: (color(accent-light)) !important;
+}
+
+.tribe-events-month-event-title a:active{
+	color: (color(accent-dark)) !important;
+}
+
+.tribe-events-page-title{
+	font-family: $heading-font;
+	color: (color(accent));
+}
+
+.tribe-events-nav-previous a,
+.tribe-events-nav-next a{
+	color: (color(primary-light));
+
+}
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
@@ -2025,15 +2171,16 @@ Media Queries
 		font-size: 40px;
 	}
 	
-	.footer-widgets-1 {
-		width: 240px;
-	}
-	
+	.footer-widgets-1,
 	.footer-widgets-2,
 	.footer-widgets-3,
-	.footer-widgets-4,
-	.footer-widgets-5 {
-		width: 140px;
+	.footer-widgets-4 {
+		width: 25%;
+	}
+	
+
+	.footer-widgets-5{
+		width:100%;
 	}
 	.featuredpost  .post .entry-header{
 		opacity: 1;
@@ -2141,15 +2288,14 @@ Media Queries
 	.footer-widgets-2,
 	.footer-widgets-3,
 	.footer-widgets-4,
-	.footer-widgets-5 {
+	.footer-widgets-1 {
 		width: 23.0769%;
 		margin: 0 0 20px;
 	}
 	
-	.footer-widgets-3,
-	.footer-widgets-4,
-	.footer-widgets-5 {
-		margin-left: 2.5641%;
+	.footer-widgets-5{
+		margin-top:50px;
+		width: 100%;
 	}
 
 }
@@ -2388,10 +2534,23 @@ Media Queries
 
 @media only screen and (max-width: 480px) {
 
+	.wrap{
+		padding:0px;
+	}
+
+	.featuredpost .post {
+		width:95%;
+	}
 	
 	.home-bottom .enews-widget input[type="email"] {
 		margin-bottom: 16px;
 		text-align: center;
+	}
+
+	.footer-widgets-5 h4, .footer-widgets-5 h4 > a{
+		font-size: 14px !important;
+		padding-bottom:18px;
+
 	}
 	
 	.title-area {
@@ -2400,6 +2559,10 @@ Media Queries
 
 	.footer-widgets{
 		padding-top:10px;
+	}
+
+	.footer-widget-area{
+		padding-left:10px;
 	}
 
 	.footer-widgets-4{
@@ -2413,7 +2576,7 @@ Media Queries
 
 	.simple-social-icons{
 		float:left;
-		width:30%;
+		width:100%;
 		text-align: center;
 
 	}
@@ -2427,5 +2590,9 @@ Media Queries
 	.footer-widgets-5{
 		width:100%;
 		padding-bottom:25px;
+	}
+	.site-header{
+		padding:10px 10px 20px 15px;
+
 	}
 }
