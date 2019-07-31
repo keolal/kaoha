@@ -2108,6 +2108,10 @@ Site Footer
 
 /* Custom Styles
 --------------------------------------------------------------------------------------------------- */
+.process-container-mobile {
+  display: none;
+}
+
 .process {
   float: left;
   margin: 0 auto !important;
@@ -2118,43 +2122,74 @@ Site Footer
 .process li {
   position: relative;
   float: left;
-  height: 100px;
+  height: auto;
+  padding: 10px 0px;
   width: 20%;
-  color: #fff;
+  color: #222;
   text-align: center;
-  letter-spacing: 1.2px;
-  line-height: 100px;
+  letter-spacing: 1px;
   -webkit-clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%, 100% 50%);
           clip-path: polygon(90% 0, 0 0, 0 100%, 90% 100%, 100% 50%);
 }
 
+.process li p {
+  width: 80% !important;
+  margin: 0 auto;
+  font-family: pt-sans, sans-serif;
+  padding-bottom: 10px;
+}
+
+.stepheader {
+  color: #fff !important;
+}
+
 .process li.step1 {
-  background: #811316;
   z-index: 5;
+}
+
+.process li.step1.stepheader {
+  background: #811316;
 }
 
 .process li.step2 {
   right: 2.5%;
-  background: #97161a;
   z-index: 4;
+}
+
+.process li.step2.stepheader {
+  background: #97161a;
 }
 
 .process li.step3 {
   right: 5%;
-  background: #ad1a1e;
   z-index: 3;
+}
+
+.process li.step3.stepheader {
+  background: #ad1a1e;
 }
 
 .process li.step4 {
   right: 7.5%;
-  background: #c41d21;
   z-index: 2;
+}
+
+.process li.step4.stepheader {
+  background: #c41d21;
 }
 
 .process li.step5 {
   right: 10%;
-  background: #da2025;
   z-index: 1;
+}
+
+.process li.step5.stepheader {
+  background: #da2025;
+}
+
+.process-body {
+  font-size: 15px;
+  text-align: left !important;
 }
 
 /*
@@ -2276,6 +2311,30 @@ Media Queries
   }
   .footer-widgets {
     padding: 50px;
+  }
+  .process-container {
+    display: none;
+  }
+  .process-container-mobile {
+    display: initial;
+  }
+  .process li {
+    width: 100%;
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+            clip-path: polygon(50% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 20px;
+  }
+  .process li p {
+    width: 100% !important;
+    padding-left: 10px;
+  }
+  .process li.step2,
+  .process li.step3,
+  .process li.step4,
+  .process li.step5 {
+    right: 0px;
   }
 }
 
