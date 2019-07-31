@@ -826,9 +826,6 @@ Common Classes
 	font-size: 20px;
 }
 
-.entry-header{
-	display: none;
-}
 
 
 .widget-title {
@@ -2422,6 +2419,10 @@ Media Queries
 		padding-top: 20px;
 	}
 
+	.post, .content .page{
+		padding: 20px !important;
+	}
+
 	.after-entry .widget,
 	.archive-description,
 	.author-box,
@@ -2637,6 +2638,7 @@ Media Queries
 	.footer-widgets-5{
 		margin-top:10px;
 	}
+
 }
 
 @media only screen and (max-width: 480px) {

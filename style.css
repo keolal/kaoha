@@ -944,10 +944,6 @@ Common Classes
   font-size: 20px;
 }
 
-.entry-header {
-  display: none;
-}
-
 .widget-title {
   font-size: 30px;
   margin-bottom: 20px;
@@ -2464,6 +2460,9 @@ Media Queries
   .education-pro-landing .site-inner,
   .site-inner {
     padding-top: 20px;
+  }
+  .post, .content .page {
+    padding: 20px !important;
   }
   .after-entry .widget,
   .archive-description,
