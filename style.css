@@ -2281,6 +2281,45 @@ Events Calendar
 }
 
 /*
+
+/*
+Ninja Forms
+--------------------------------------------------------------------------------------------------- */
+.nf-form-title {
+  display: none;
+}
+
+.nf-form-wrap {
+  margin-top: 50px;
+}
+
+.nf-form-fields-required {
+  margin-left: 32px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nf-form-content button,
+.nf-form-content input[type=button],
+.nf-form-content input[type=submit] {
+  width: 100% !important;
+  background: #2f892a !important;
+  color: #fff !important;
+  font-size: 24px;
+  line-height: 0px;
+  text-transform: uppercase;
+  padding: 40px !important;
+  margin-top: 50px;
+}
+
+.nf-form-content button:hover,
+.nf-form-content input[type=button]:hover,
+.nf-form-content input[type=submit]:hover {
+  background: #3cb036 !important;
+}
+
+/*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1160px) {

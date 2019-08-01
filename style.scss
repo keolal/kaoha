@@ -78,7 +78,7 @@ $accent-color: #0C4F4D;
 $link-color: #131981;
 $menu-link-color:#e2e2e2;
 $footer-link-color: #fffad7;
-$call-to-action-color: #814813;
+$call-to-action-color: #2f892a;
 $body-font: pt-sans, sans-serif;
 $heading-font: pt-sans-caption, sans-serif;
 $lighten-1: 5%;
@@ -104,8 +104,8 @@ $colors: (
     footer-link-dark: darken($footer-link-color,$color-step-links),
     footer-link-light: lighten($footer-link-color, $color-step-links),
     call-to-action: $call-to-action-color,
-    call-to-action-dark: darken($call-to-action-color, $color-step),
-	call-to-action-light: lighten($call-to-action-color, $color-step),
+    call-to-action-dark: darken($call-to-action-color, $lighten-2),
+	call-to-action-light: lighten($call-to-action-color, $lighten-2),
 	primary-light-1: lighten($primary-color, $lighten-1),
 	primary-light-2: lighten($primary-color, $lighten-2),
 	primary-light-3: lighten($primary-color, $lighten-3),
@@ -2189,7 +2189,44 @@ Events Calendar
 .tribe-events-nav-previous a,
 .tribe-events-nav-next a{
 	color: (color(primary-light));
+}
+/*
 
+/*
+Ninja Forms
+--------------------------------------------------------------------------------------------------- */
+.nf-form-title{
+	display: none;
+}
+
+.nf-form-wrap{
+	margin-top:50px;
+}
+
+.nf-form-fields-required{
+	margin-left: 32px;
+	padding-bottom: 10px;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.nf-form-content button,
+.nf-form-content input[type=button],
+.nf-form-content input[type=submit]{
+	width:100% !important;
+	background: (color(call-to-action)) !important;
+	color: #fff !important;
+	font-size: 24px;
+	line-height: 0px;
+	text-transform: uppercase;
+	padding:40px !important;
+	margin-top:50px;
+}
+
+.nf-form-content button:hover,
+.nf-form-content input[type=button]:hover,
+.nf-form-content input[type=submit]:hover{
+	background: (color(call-to-action-light)) !important;
 }
 /*
 Media Queries
