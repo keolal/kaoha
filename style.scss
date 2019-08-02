@@ -79,8 +79,8 @@ $link-color: #131981;
 $menu-link-color:#e2e2e2;
 $footer-link-color: #fffad7;
 $call-to-action-color: #2f892a;
-$body-font: pt-sans, sans-serif;
-$heading-font: pt-sans-caption, sans-serif;
+$body-font: noto-sans, sans-serif;
+$heading-font: noto-sans, sans-serif;
 $lighten-1: 5%;
 $lighten-2: $lighten-1 * 2;
 $lighten-3: $lighten-1 * 3;
@@ -296,7 +296,7 @@ h5,
 h6 {
 	font-family: $heading-font;
 	font-style: normal;
-	font-weight:400;
+	font-weight:700;
 	line-height: 1.2;
 	margin: 20px 0px 25px 0px;
 	color: (color(accent));
@@ -965,13 +965,15 @@ Widgets
 }
 .footer-widget-area h4{
 	font-family: $heading-font;
+	font-weight: 700;
 	font-Size: 16px;
 	color:(color(menu-link-light));
+	margin:0px 0px 20px 0px;
 }
 
 .footer-widget-area a{
 	color: (color(footer-link));
-	font-size:14px;
+	font-size:16px;
 }
 
 .footer-widget-area a:hover{
@@ -1639,6 +1641,7 @@ Content Area
 	height:100%;
 	padding: 0px !important;
 	font-family: $heading-font;
+	font-weight:700;
 	color: (color(menu-link));
 }
 
@@ -1696,7 +1699,7 @@ featuredpost  .post .entry-title a:active{
 
 p.entry-meta {
 	font-family: $heading-font;
-	font-weight:400;
+	font-weight:700;
 	font-size: 12px;
 }
 
@@ -1934,6 +1937,7 @@ Footer Widgets
 .footer-widgets-5 h4 > a{
 	font-size:18px !important;
 	font-family: $heading-font;
+	font-weight:700;
 }
 .footer-widgets-5 a{
 	color:(color(footer-link));
@@ -1991,7 +1995,7 @@ Site Footer
 .simple-social-icons ul li a{
 	background-color: #e9e9e9 !important;
 	display:block;
-	padding: 16px;
+	padding: 15px;
 	box-shadow: 3px 3px rgba(70, 70, 70, 0.15);
 }
 
@@ -2184,6 +2188,7 @@ Events Calendar
 .tribe-events-page-title{
 	font-family: $heading-font;
 	color: (color(accent));
+	font-weight:700;
 }
 
 .tribe-events-nav-previous a,
@@ -2732,5 +2737,9 @@ Media Queries
 	.footer-widgets-5{
 		width:100%;
 		padding-bottom:25px;
+	}
+	.title-area{
+		margin-bottom:0px;
+
 	}
 }

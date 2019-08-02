@@ -308,7 +308,7 @@ Defaults
 body {
   background: #f5f5f5 url("images/kapa-seamless.png");
   color: #444;
-  font-family: pt-sans, sans-serif;
+  font-family: noto-sans, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -408,9 +408,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: pt-sans-caption, sans-serif;
+  font-family: noto-sans, sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.2;
   margin: 20px 0px 25px 0px;
   color: #0C4F4D;
@@ -1078,14 +1078,16 @@ Widgets
 }
 
 .footer-widget-area h4 {
-  font-family: pt-sans-caption, sans-serif;
+  font-family: noto-sans, sans-serif;
+  font-weight: 700;
   font-Size: 16px;
   color: white;
+  margin: 0px 0px 20px 0px;
 }
 
 .footer-widget-area a {
   color: #fffad7;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .footer-widget-area a:hover {
@@ -1733,7 +1735,8 @@ Content Area
   width: 100%;
   height: 100%;
   padding: 0px !important;
-  font-family: pt-sans-caption, sans-serif;
+  font-family: noto-sans, sans-serif;
+  font-weight: 700;
   color: #e2e2e2;
 }
 
@@ -1789,8 +1792,8 @@ featuredpost .post .entry-title a:active {
 /* Entry Meta
 --------------------------------------------- */
 p.entry-meta {
-  font-family: pt-sans-caption, sans-serif;
-  font-weight: 400;
+  font-family: noto-sans, sans-serif;
+  font-weight: 700;
   font-size: 12px;
 }
 
@@ -2014,7 +2017,7 @@ Footer Widgets
   width: 100%;
   padding: 0px 0px 100px 0px;
   color: #fff;
-  font-family: pt-sans, sans-serif;
+  font-family: noto-sans, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.8em !important;
@@ -2024,7 +2027,8 @@ Footer Widgets
 .footer-widgets-5 h4,
 .footer-widgets-5 h4 > a {
   font-size: 18px !important;
-  font-family: pt-sans-caption, sans-serif;
+  font-family: noto-sans, sans-serif;
+  font-weight: 700;
 }
 
 .footer-widgets-5 a {
@@ -2081,7 +2085,7 @@ Site Footer
 .simple-social-icons ul li a {
   background-color: #e9e9e9 !important;
   display: block;
-  padding: 16px;
+  padding: 15px;
   -webkit-box-shadow: 3px 3px rgba(70, 70, 70, 0.15);
           box-shadow: 3px 3px rgba(70, 70, 70, 0.15);
 }
@@ -2131,7 +2135,7 @@ Site Footer
 .process li p {
   width: 80% !important;
   margin: 0 auto;
-  font-family: pt-sans, sans-serif;
+  font-family: noto-sans, sans-serif;
   padding-bottom: 10px;
 }
 
@@ -2271,8 +2275,9 @@ Events Calendar
 }
 
 .tribe-events-page-title {
-  font-family: pt-sans-caption, sans-serif;
+  font-family: noto-sans, sans-serif;
   color: #0C4F4D;
+  font-weight: 700;
 }
 
 .tribe-events-nav-previous a,
@@ -2728,6 +2733,9 @@ Media Queries
   .footer-widgets-5 {
     width: 100%;
     padding-bottom: 25px;
+  }
+  .title-area {
+    margin-bottom: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
